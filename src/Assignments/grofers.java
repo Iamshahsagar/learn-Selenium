@@ -44,7 +44,10 @@ public class grofers {
 		
 		for(int i=0;i<=list.size();i++)
 		{
-			System.out.println(list.get(i).getText());
+			WebElement tr =driver.findElement(By.xpath("//div[@class=\'plp-product__name--box\']"));
+			System.out.println(tr.getText());
+			
+			//System.out.println(list.get(i).getText());
 			//	list.get(5).click();
 	}
 		}
