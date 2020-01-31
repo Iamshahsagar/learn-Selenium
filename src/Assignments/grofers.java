@@ -29,12 +29,15 @@ public class grofers {
 		
 		Actions act = new Actions(driver);		
 		act.sendKeys("cho").build().perform();
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 		driver.findElement(By.id("react-autowhatever-search-section-0-item-0")).click();
 		
 
 		Thread.sleep(5000);
 		List<WebElement>list=driver.findElements(By.xpath("//div[@class='products products--grid']//a"));
+		List<WebElement>pn=driver.findElements(By.xpath("//div[@class='plp-product__name--box']"));
+		List<WebElement>pw=driver.findElements(By.xpath("//div[@class='plp-product__quantity']"));
+		List<WebElement>pnp=driver.findElements(By.xpath("//div[@class='plp-product__price--new']"));
 		
 	
 		Thread.sleep(5000);
@@ -44,8 +47,10 @@ public class grofers {
 		
 		for(int i=0;i<=list.size();i++)
 		{
-			WebElement tr =driver.findElement(By.xpath("//div[@class=\'plp-product__name--box\']"));
-			System.out.println(tr.getText());
+			System.out.println("-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*");
+			System.out.println("Product name :" + pn.get(i).getText());
+			System.out.println("Product Quantity :" + pw.get(i).getText());
+			System.out.println("Product price :" + pw.get(i).getText());
 			
 			//System.out.println(list.get(i).getText());
 			//	list.get(5).click();
