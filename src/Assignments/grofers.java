@@ -2,6 +2,7 @@ package Assignments;
 
 import java.util.List;
 
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -37,7 +38,7 @@ public class grofers {
 		List<WebElement>list=driver.findElements(By.xpath("//div[@class='products products--grid']//a"));
 		List<WebElement>pn=driver.findElements(By.xpath("//div[@class='plp-product__name--box']"));
 		List<WebElement>pw=driver.findElements(By.xpath("//div[@class='plp-product__quantity']"));
-		List<WebElement>pnp=driver.findElements(By.xpath("//div[@class='plp-product__price--new']"));
+		List<WebElement>pnp=driver.findElements(By.xpath("//span[@class='plp-product__price--new']"));
 		
 	
 		Thread.sleep(5000);
@@ -45,12 +46,28 @@ public class grofers {
 		Thread.sleep(5000);
 		
 		
+		Xls_Reader reader = new Xls_Reader("C:\\Users\\dhaval\\eclipse-workspace\\Test\\src\\Work\\Testing.xlsx");
+		reader.addSheet("Grof");
+		reader.addcolumn("Grof", "Product Name");
+		reader.addcolumn("Grof", "Product Quantity");
+		reader.addcolumn("Grof", "Product Price");
+		
+		
 		for(int i=0;i<=list.size();i++)
 		{
 			System.out.println("-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*");
-			System.out.println("Product name :" + pn.get(i).getText());
-			System.out.println("Product Quantity :" + pw.get(i).getText());
-			System.out.println("Product price :" + pw.get(i).getText());
+			String proname = pn.get(i).getText();
+			reader.setCellData("Grof", "Product Name", i , "proname");
+			String proQ = pw.get(i).getText();
+			reader.setCellData("Grof", "Product Quantity", i , "proQ");
+			String propri = pnp.get(i).getText();
+			reader.setCellData("Grof", "Product Price", i , " ");
+			
+			
+			
+			System.out.println("Product name :" + proname);
+			System.out.println("Product Quantity :" + proQ);
+			System.out.println("Product price :" + propri);
 			
 			//System.out.println(list.get(i).getText());
 			//	list.get(5).click();
