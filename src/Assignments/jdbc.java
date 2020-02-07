@@ -35,8 +35,9 @@ public class jdbc {
  		// While Loop to iterate through all data and print results		
 		while (rs.next()){
 	        		String id = rs.getString(1);								        
-                    String name = rs.getString(2);					                               
-                    System. out.println(id+"  "+name);		
+                    String name = rs.getString(2);	
+                    String age = rs.getString(3);
+                    System. out.println(" "+ id+"  name "+name +" and age " +age+".");		
             }		
 			 // closing DB Connection		
 			con.close();			
