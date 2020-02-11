@@ -24,7 +24,7 @@ public class Brokenlink {
 		options.addArguments("disable-notifications");
 		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver(options);
-		String homePage ="http://onlinepreview.work/";
+		String homePage ="http://gwg.digital/sf/";
 	driver.manage().window().maximize();
         // TODO Auto-generated method stub
        
