@@ -37,7 +37,7 @@ public class jdbc {
 	        		String id = rs.getString(1);								        
                     String name = rs.getString(2);	
                     String age = rs.getString(3);
-                    System. out.println(" "+ id+"  name "+name +" and age " +age+".");		
+                    System. out.println(" "+ id+"  name : "+name +" and age  : " +age+".");		
             }		
 			 // closing DB Connection		
 			con.close();			
