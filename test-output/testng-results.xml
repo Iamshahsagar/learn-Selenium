@@ -2,47 +2,27 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="32141" started-at="2020-01-31T04:54:19Z" finished-at="2020-01-31T04:54:51Z">
+  <suite name="Default suite" duration-ms="3134" started-at="2020-02-12T09:32:18Z" finished-at="2020-02-12T09:32:22Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="32141" started-at="2020-01-31T04:54:19Z" finished-at="2020-01-31T04:54:51Z">
-      <class name="Assignments.pagination">
-        <test-method status="FAIL" signature="productCount()[pri:0, instance:Assignments.pagination@29774679]" name="productCount" duration-ms="32096" started-at="2020-01-31T10:24:19Z" finished-at="2020-01-31T10:24:51Z">
-          <exception class="org.openqa.selenium.WebDriverException">
+    <test name="Default test" duration-ms="3134" started-at="2020-02-12T09:32:18Z" finished-at="2020-02-12T09:32:22Z">
+      <class name="Assignments.ExtractImage">
+        <test-method status="PASS" signature="setUpDriver()[pri:0, instance:Assignments.ExtractImage@77caeb3e]" name="setUpDriver" is-config="true" duration-ms="3112" started-at="2020-02-12T15:02:18Z" finished-at="2020-02-12T15:02:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method status="FAIL" signature="start()[pri:0, instance:Assignments.ExtractImage@77caeb3e]" name="start" duration-ms="4" started-at="2020-02-12T15:02:22Z" finished-at="2020-02-12T15:02:22Z">
+          <exception class="java.lang.Error">
             <message>
-              <![CDATA[chrome not reachable
-  (Session info: chrome=79.0.3945.130)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'GLOBALGARNER', ip: '192.168.3.229', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\dhaval\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58599}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 48d37654c5ca7f55baf57f57aac8cedf
-*** Element info: {Using=xpath, value=//div[@class='_3wU53n']}]]>
+              <![CDATA[Unresolved compilation problem: 
+	OCR cannot be resolved to a type
+]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=79.0.3945.130)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'GLOBALGARNER', ip: '192.168.3.229', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\dhaval\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58599}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 48d37654c5ca7f55baf57f57aac8cedf
-*** Element info: {Using=xpath, value=//div[@class='_3wU53n']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:432)
-	at org.openqa.selenium.By$ByXPath.findElements(By.java:348)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)
-	at Assignments.pagination.productCount(pagination.java:64)
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+	OCR cannot be resolved to a type
+
+	at Assignments.ExtractImage.start(ExtractImage.java:38)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -70,11 +50,11 @@ Session ID: 48d37654c5ca7f55baf57f57aac8cedf
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- java.lang.Error -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- productCount -->
-      </class> <!-- Assignments.pagination -->
+        </test-method> <!-- start -->
+      </class> <!-- Assignments.ExtractImage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

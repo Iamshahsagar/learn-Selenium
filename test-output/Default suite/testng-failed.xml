@@ -3,11 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Assignments.pagination">
+      <class name="Assignments.ExtractImage">
         <methods>
-          <include name="productCount"/>
+          <include name="start"/>
+          <include name="setUpDriver"/>
         </methods>
-      </class> <!-- Assignments.pagination -->
+      </class> <!-- Assignments.ExtractImage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
