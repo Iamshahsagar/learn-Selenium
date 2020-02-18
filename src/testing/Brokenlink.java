@@ -28,7 +28,7 @@ public class Brokenlink {
 	driver.manage().window().maximize();
         // TODO Auto-generated method stub
        
-   //     String homePage = "https://www.globalgarner.com";
+   //     String homePage = "https://best-shopping-websites.globalgarner.com/search";
         String url = "";
         HttpURLConnection huc = null;
         int respCode = 200;
