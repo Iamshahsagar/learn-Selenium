@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="D:/selenium-java-3.141.59/libs/byte-buddy-1.8.15.jar"/>
 	<classpathentry kind="lib" path="D:/selenium-java-3.141.59/libs/commons-exec-1.3.jar"/>
@@ -66,5 +70,8 @@
 	<classpathentry kind="lib" path="C:/Users/dhaval/Downloads/Compressed/jar_files/slf4j-api-1.7.25.jar"/>
 	<classpathentry kind="lib" path="C:/Users/dhaval/Downloads/Compressed/jar_files/stax-api-1.0.1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/dhaval/Downloads/Compressed/jar_files/xmlbeans-2.6.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sagar Shah/Downloads/sqljdbc_4.2/enu/jre8/sqljdbc42.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sagar Shah/Downloads/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sagar Shah/Downloads/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48-bin.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
