@@ -25,16 +25,13 @@ public static void main(String[] args) throws IOException, InterruptedException
 	
 	driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div[2]/ul/li[1]/a")).click();
 
-	driver.findElement(By.name("username")).sendKeys("8780326282");
-	driver.findElement(By.name("password")).sendKeys("sagar1997");
+	//driver.findEleme nt(By.name("username")).sendKeys("8780326282");
+//	driver.findElement(By.name("password")).sendKeys("sagar1997");
 	
 	Actions act = new Actions(driver);
 	act.sendKeys(Keys.ENTER).build().perform();
 	Thread.sleep(5000);
-
-	
-	
-	driver.findElement(By.xpath("//span[@class='bp3-popover-wrapper login-menu']")).click();
+ driver.findElement(By.xpath("//span[@class='bp3-popover-wrapper login-menu']")).click();
 	
 	
 	driver.findElement(By.xpath("//div[contains(text(),'Logout')]")).click();
